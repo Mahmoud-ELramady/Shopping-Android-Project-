@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/l44"
+    tools:context=".Buyers.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_desc_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:gravity="center"
+            android:text="Find, Discover, Choose and Buy any thing"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_main_signup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="Join now"
+            android:textColor="#EAE0E0"
+            android:textSize="@dimen/_21sdp"
+            app:cornerRadius="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_321sdp"
+            app:layout_constraintTop_toBottomOf="@id/tv_desc_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="#BF007A"
+            app:strokeWidth="@dimen/_3sdp"
+            tools:layout_editor_absoluteY="507dp" />
+
+        <TextView
+            android:id="@+id/tv_main_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/text_main_login"
+            app:layout_constraintTop_toBottomOf="@+id/btn_main_signup"
+            android:gravity="center"
+            android:textColor="#FFFF"
+            android:textStyle="bold"
+            android:autoLink="all"
+            android:selectAllOnFocus="false"
+            android:linksClickable="false"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_16sdp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

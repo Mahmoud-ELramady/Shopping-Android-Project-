@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginStart="10dp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_marginEnd="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#F8F9FB"
+
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/seller_name_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:text="Product Name"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/seller_image_item"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seller_name_item"
+            android:scaleType="centerCrop"
+            />
+
+
+        <TextView
+            android:id="@+id/seller_price_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seller_image_item"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="18dp"
+            android:text="Product Price"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/seller_desc_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seller_price_item"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="16dp"
+            android:text="Product Description"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/seller_status_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seller_desc_item"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="18dp"
+            android:text="Product Status"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

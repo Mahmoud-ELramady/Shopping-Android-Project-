@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Buyers.setting.SettingFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image_setting"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:src="@drawable/profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:civ_border_width="@dimen/_3sdp"
+        app:civ_border_color="#FFF"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        />
+
+     <TextView
+         android:id="@+id/change_profile_setting"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:layout_constraintTop_toBottomOf="@id/profile_image_setting"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:text="Change Profile"
+         android:textColor="#000"
+         android:textSize="16dp"
+         android:textStyle="bold"
+         />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profile_name_setting_edly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/change_profile_setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:hint="Full Name"
+        android:textColorHint="#80000000"
+        app:errorEnabled="true"
+        app:boxStrokeColor="@color/colorAccent"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profile_name_setting_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profile_phone_setting_edly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name_setting_edly"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:hint="Phone"
+        android:textColorHint="#80000000"
+        app:errorEnabled="true"
+        app:boxStrokeColor="@color/colorAccent"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profile_phone_setting_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:inputType="phone"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profile_address_setting_edly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/profile_phone_setting_edly"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:hint="Address"
+        android:textColorHint="#80000000"
+        app:errorEnabled="true"
+        app:boxStrokeColor="@color/colorAccent"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profile_address_setting_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_18sdp"
+        android:gravity="center"
+        android:text="Save Account Settings"
+        android:textColor="#EAE0E0"
+        android:textSize="@dimen/_18sdp"
+        app:cornerRadius="16dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_address_setting_edly"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_security_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_18sdp"
+        android:gravity="center"
+        android:text="Set Security Questions"
+        android:textColor="#EAE0E0"
+        android:textSize="@dimen/_18sdp"
+        app:cornerRadius="16dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save_settings"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

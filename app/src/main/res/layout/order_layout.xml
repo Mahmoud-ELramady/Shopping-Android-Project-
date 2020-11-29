@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="15dp"
+    app:cardCornerRadius="@dimen/_15sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@color/colorPrimary"
+        >
+
+
+        <TextView
+            android:id="@+id/item_order_user_name_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="User Name"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:id="@+id/item_order_phone_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Phone number"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:id="@+id/item_order_price_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/item_order_phone_admin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Total Price"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            />
+
+
+        <TextView
+            android:id="@+id/item_order_address_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/item_order_price_admin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Address, City"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/item_order_time_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/item_order_address_admin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Date Time"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_show_order_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Show order Products"
+            android:textColor="@color/colorPrimary"
+            android:backgroundTint="#FFF"
+            android:textSize="20sp"
+            app:cornerRadius="16dp"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_order_time_admin"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:id="@+id/admin_category"
+    tools:context=".Sellers.SellerProductCategoryActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/new_product_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="#FFF"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/new_product_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="What kind of product are you adding?"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:weightSum="4"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+
+        >
+        <ImageView
+            android:id="@+id/iv_tshirts"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/tshirts"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/iv_sports"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:src="@drawable/sports"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_dresses"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:src="@drawable/female_dresses"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_sweather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sweather"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linear1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:weightSum="4"
+
+        >
+        <ImageView
+            android:id="@+id/iv_glasses"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/glasses"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/iv_bags"
+            android:layout_width="70dp"
+            android:layout_height="75dp"
+            android:src="@drawable/purses_bags"
+            android:layout_weight="1"
+
+
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_hats"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/hats"
+            android:layout_weight="1"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_shoes"
+            android:layout_width="50dp"
+            android:layout_height="65dp"
+            android:src="@drawable/shoess"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linear2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:weightSum="4"
+
+        >
+        <ImageView
+            android:id="@+id/iv_headphones"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/headphoness"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/iv_laptops"
+            android:layout_width="70dp"
+            android:layout_height="75dp"
+            android:src="@drawable/laptops"
+            android:layout_weight="1"
+
+
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_watches"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/watches"
+            android:layout_weight="1"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_mobiles"
+            android:layout_width="50dp"
+            android:layout_height="65dp"
+            android:src="@drawable/mobiles"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
