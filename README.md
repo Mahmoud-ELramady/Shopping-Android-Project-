@@ -1,4 +1,9 @@
 # Shopping-Android-Project-
+
+ <p align="center">
+     <img src="https://user-images.githubusercontent.com/47406119/141524398-0c4c7002-8fd8-49cb-be5f-518a482d6bcd.jpg" width="300" height="300"  />
+</p>
+
 This is a project similar to the Souq and AliExpress apps. Users can shop and make an order, the possibility of registering an account for the seller to display his products to users in addition to that, and there is an admin who is in control of the products in terms of acceptance or rejection. This is using Firebase
 
 Shopping APP is an application for Shopping similar to Souq and Jumia.
