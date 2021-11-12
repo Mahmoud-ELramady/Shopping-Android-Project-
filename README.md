@@ -60,5 +60,4 @@ In which products are purchased online, the application for sellers also, as the
 
 
 ## APK
-https://drive.google.com/file/d/1dB3ZUzPpObHIrKrDhMvuIY0CsX3XbFhx/view
-
+https://drive.google.com/file/d/1coO1Pt0_Qh29D5DUwc6l7BS8mQdKIu_e/view?usp=sharing
